@@ -11,3 +11,8 @@ src/.DS_Store
 src/iS3D.e
 src/cpp/obj
 iS3D
+
+# 新增忽略内容
+build/
+output/
+

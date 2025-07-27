@@ -19,7 +19,7 @@ add_library(iS3D_lib SHARED ${SOURCES})
 add_executable(iS3D ${SOURCES})
 
 
-target_link_libraries (iS3D_lib ${GSL_LIBRARIES})
-target_link_libraries (iS3D ${GSL_LIBRARIES})
+target_link_libraries (iS3D_lib gsl gslcblas)
+target_link_libraries (iS3D gsl gslcblas)
 
 install(TARGETS iS3D DESTINATION ${CMAKE_HOME_DIRECTORY})
